@@ -1,0 +1,74 @@
+//Inicio proyecto 3
+
+//Se crea la clase "Empleado"
+public class Empleado {
+
+	//Se declaran los atributos que posteriormente seran instanciados
+	public String nombreEmpleado;
+	public String apellidoEmpleado;
+	public Double salarioMensual;
+	public static int numeroDeEmpleado = 0;
+	public int contadorDeEmpleados;
+	
+	//Se genera el constructor que instanciara a nuestros empleados
+	public Empleado(String nombreEmpleado, String apellidoEmpleado, Double salarioMensual, int numeroDeEmpleado) {
+		super();
+		contadorDeEmpleados = numeroDeEmpleado++;
+		this.nombreEmpleado = nombreEmpleado;
+		this.apellidoEmpleado = apellidoEmpleado;
+		this.salarioMensual = salarioMensual;
+	}
+
+	//Se crean metodos Get y Set para cada variable a instanciar
+	/////////////////////////////////////////
+
+	public String getNombreEmpleado() {
+		return nombreEmpleado;
+	}
+
+
+	public void setNombreEmpleado(String nombreEmpleado) {
+		this.nombreEmpleado = nombreEmpleado;
+	}
+
+	////////////////////////////////////////
+	
+	public String getApellidoEmpleado() {
+		return apellidoEmpleado;
+	}
+
+
+	public void setApellidoEmpleado(String apellidoEmpleado) {
+		this.apellidoEmpleado = apellidoEmpleado;
+	}
+
+	////////////////////////////////////////
+
+	public Double getSalarioMensual() {
+		return salarioMensual;
+	}
+
+
+	public void setSalarioMensual(Double salarioMensual) {
+		this.salarioMensual = salarioMensual;
+	}
+
+
+	public void aumentarSalario (Double salarioMensual, Double aumento) {
+		aumento *= 1.1;
+		System.out.println("Salario + aumento: " + (this.salarioMensual+(this.salarioMensual)/10));
+		System.out.println("Salario anual del empleado: " + (this.salarioMensual*aumento*12));
+	}
+	
+
+	@Override
+	public String toString() {
+		return "Empleado [salarioMensual=" + salarioMensual + "]";
+	}
+	
+	
+	/////////////////////////////////////////
+	
+	
+	
+}

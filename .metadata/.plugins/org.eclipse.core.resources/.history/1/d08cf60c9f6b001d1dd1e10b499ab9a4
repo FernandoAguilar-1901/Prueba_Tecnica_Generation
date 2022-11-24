@@ -1,0 +1,92 @@
+
+public class Empleado {
+
+	public String nombreDeEmpleado;
+	public String apellidoDeEmpleado;
+	public Double salarioMensual;
+	public int contadorDeEmpleados;
+	public static int numeroDeEmpleado = 0;
+	
+	
+	public Empleado(String nombreDeEmpleado, String apellidoDeEmpleado, Double salarioMensual,
+			int contadorDeEmpleados) {
+		super();
+		contadorDeEmpleados = numeroDeEmpleado++;
+		this.nombreDeEmpleado = nombreDeEmpleado;
+		this.apellidoDeEmpleado = apellidoDeEmpleado;
+		this.salarioMensual = salarioMensual;
+		this.contadorDeEmpleados = contadorDeEmpleados;
+	}
+
+////////////////////////////
+	public String getNombreDeEmpleado() {
+		return nombreDeEmpleado;
+	}
+
+
+	public void setNombreDeEmpleado(String nombreDeEmpleado) {
+		this.nombreDeEmpleado = nombreDeEmpleado;
+	}
+
+///////////////////////////
+	public String getApellidoDeEmpleado() {
+		return apellidoDeEmpleado;
+	}
+
+
+	public void setApellidoDeEmpleado(String apellidoDeEmpleado) {
+		this.apellidoDeEmpleado = apellidoDeEmpleado;
+	}
+
+//////////////////////////////
+	public Double getSalarioMensual() {
+		return salarioMensual;
+	}
+
+
+	public void setSalarioMensual(Double salarioMensual) {
+		this.salarioMensual = salarioMensual;
+	}
+
+////////////////////////////////
+	public int getContadorDeEmpleados() {
+		return contadorDeEmpleados;
+	}
+
+
+	public void setContadorDeEmpleados(int contadorDeEmpleados) {
+		this.contadorDeEmpleados = contadorDeEmpleados;
+	}
+
+/////////////////////////////////
+	public static int getNumeroDeEmpleado() {
+		return numeroDeEmpleado;
+	}
+
+
+	public static void setNumeroDeEmpleado(int numeroDeEmpleado) {
+		Empleado.numeroDeEmpleado = numeroDeEmpleado;
+	}
+
+//////////////////////////////////
+	
+	public void aumentoDeSalario() {
+		System.out.println(this.salarioMensual+this.salarioMensual/10);
+		System.out.println("Salario anual con aumento: " + (this.salarioMensual/10+this.salarioMensual*12));
+	}
+	
+//////////////////////////////////
+	
+	String historialDeEmpleados() {
+		return "Cantidad de empleados que ha tenido la empresa: " + Empleado.numeroDeEmpleado;
+	}
+	
+//////////////////////////////////
+	@Override
+	public String toString() {
+		return "Empleado [nombreDeEmpleado=" + nombreDeEmpleado + ", apellidoDeEmpleado=" + apellidoDeEmpleado
+				+ ", salarioMensual=" + salarioMensual + "]";
+	}
+	
+	
+}

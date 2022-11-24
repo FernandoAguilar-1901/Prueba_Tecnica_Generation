@@ -1,0 +1,72 @@
+
+public class Empleado {
+
+	public String nombreEmpleado;
+	public String apellidoEmpleado;
+	public Double salarioMensual;
+	
+	
+	public Empleado(String nombreEmpleado, String apellidoEmpleado, Double salarioMensual) {
+		super();
+		this.nombreEmpleado = nombreEmpleado;
+		this.apellidoEmpleado = apellidoEmpleado;
+		this.salarioMensual = salarioMensual;
+	}
+
+	/////////////////////////////////////////
+
+	public String getNombreEmpleado() {
+		return nombreEmpleado;
+	}
+
+
+	public void setNombreEmpleado(String nombreEmpleado) {
+		this.nombreEmpleado = nombreEmpleado;
+	}
+
+	////////////////////////////////////////
+	
+	public String getApellidoEmpleado() {
+		return apellidoEmpleado;
+	}
+
+
+	public void setApellidoEmpleado(String apellidoEmpleado) {
+		this.apellidoEmpleado = apellidoEmpleado;
+	}
+
+	////////////////////////////////////////
+
+	public Double getSalarioMensual() {
+		return salarioMensual;
+	}
+
+
+	public void setSalarioMensual(Double salarioMensual) {
+		this.salarioMensual = salarioMensual;
+	}
+
+
+	public void aumentarSalario (Double salarioMensual, Double aumento) {
+		aumento *= 1.1;
+		System.out.println("Salario + aumento: " + (this.salarioMensual+(this.salarioMensual)/10));
+		System.out.println("Salario anual del empleado: " + (this.salarioMensual*aumento*12));
+	}
+	
+	public void contadorDeEmpleados (int i) {
+		for(i=0; i==2; i++) {
+			System.out.println("Contador de empleados: " + i);
+		}
+	}
+
+	@Override
+	public String toString() {
+		return "Empleado [salarioMensual=" + salarioMensual + "]";
+	}
+	
+	
+	/////////////////////////////////////////
+	
+	
+	
+}

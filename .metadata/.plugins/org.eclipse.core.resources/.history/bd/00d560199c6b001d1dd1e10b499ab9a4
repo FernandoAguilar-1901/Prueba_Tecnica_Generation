@@ -1,0 +1,9 @@
+
+public class Empleado {
+
+	public String nombreDeEmpleado;
+	public String apellidoDeEmpleado;
+	public Double salarioMensual;
+	public int contadorDeEmpleados;
+	public static int numeroDeEmpleado = 0;
+}

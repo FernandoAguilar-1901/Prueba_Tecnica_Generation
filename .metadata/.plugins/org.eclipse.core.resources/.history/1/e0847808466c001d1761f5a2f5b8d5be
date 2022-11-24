@@ -1,0 +1,24 @@
+
+public class Propietario {
+	
+	//
+	public String nombrePropietario;
+	public Long CPF;
+	public String RG;
+	public String fechaDeNacimiento;
+	public String nombreDeCalle;
+	public String nombreDeVecindario;
+	public String nombreDeCiudad;
+	public String expresarPropietario;
+	public int codigoPostal;
+	public String complementarPropietario;
+	
+	//
+	public Propietario(String nombrePropietario, Long cPF, String rG) {
+		super();
+		this.nombrePropietario = nombrePropietario;
+		CPF = cPF;
+		RG = rG;
+	}
+
+}

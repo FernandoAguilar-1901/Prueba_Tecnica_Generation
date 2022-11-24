@@ -1,0 +1,118 @@
+
+public class Auto {
+	
+	public String modeloAuto;
+	public String colorAuto;
+	public int añoAuto;
+	public String marcaAuto;
+	public String chasisAuto;
+	public String propietarioAuto;
+	public int velocidadMaxima;
+	public int velocidadActual;
+	public int numeroDePuertos;
+	public boolean existeTechoSolar;
+	public int numeroDeMarchas;
+	public boolean existeTransmisionAutomatica;
+	public boolean marchaEnReversa;
+	
+	
+	//Metodo de incremento de velocidad
+	public void aumentoDeVelocidad(int velocidadIncremento) {
+		int vI = 0; // Velocidad inicial
+		int vI2 = 5; // Velocidad en transmision automatica
+		int vMax = 0; // variable de velocidad maxima que puede alcanzar el coche
+		boolean existeTransmisionAutomatica = true;
+		boolean marchaEnReversa = false;
+		
+		if (existeTransmisionAutomatica == true && marchaEnReversa == false) {
+			for (vI2 = 0; vI2 <= vMax; vI2++) {
+			} // for 1
+			System.out.println(vMax);
+		} else {
+			for (vI = 0; vI <= vMax; vI++) {
+			} //for 2
+			System.out.println(vMax);
+		} //else
+
+	} //termina metodo 1
+	
+	
+	
+	
+	
+	
+	//Metodo para disminuir la velocidad
+	public void disminuirVelocidad (int velocidadDecremento) {
+		int vIn = 180;
+		int vIn2 = 200;
+		int vMin = 0;
+		boolean existeTransmisionAutomatica = true;
+		boolean marchaEnReversa = false;
+		
+		if (existeTransmisionAutomatica == true && marchaEnReversa == false) {
+			for (vIn = 0; vIn == vMin; vIn--) {
+			} // for 3
+			System.out.println(vMin);
+		} else {
+			for (vIn2 = 0; vIn2 == vMin; vIn2--) {
+			} //for 4
+			System.out.println(vMin);
+		} //else
+	} //termina metodo 2
+	
+	
+	
+	
+	
+	//Metodo para cambio de marcha
+	public void cambioDeMarcha(int marchaIndicador) {
+		int marcha = 0;
+		switch (marcha) {
+		case 0:
+			System.out.println("El auto no se encuentra avanzando");
+		case 1:
+			System.out.println("Marcha 1: velocidad entre 0 y 20 km/h");
+		case 2:
+			System.out.println("Marcha 2: velocidad entre 21 y 60 km/h");
+		case 3:
+			System.out.println("Marcha 3: velocidad entre 61 y 100 km/h");
+		case 4:
+			System.out.println("Marcha 4: velocidad entre 101 y 120 km/h");
+		case 5:
+			System.out.println("Marcha 5: velocidad entre 121 y 150 km/h");
+		case 6:
+			System.out.println("Marcha 6: velocidad entre 151 y 180 km/h");
+			break;
+		}
+		
+	}
+	
+	
+	
+	
+	
+	//Metodo para regresar la marcha
+	public void regresarMarcha(int marchaRegreso) {
+		int marchaR = 0;
+		switch (marchaR) {
+		case 0:
+			System.out.println("Marcha 6: velocidad entre 151 y 180 km/h");
+		case 1:
+			System.out.println("Marcha 5: velocidad entre 121 y 150 km/h");
+		case 2:
+			System.out.println("Marcha 4: velocidad entre 101 y 120 km/h");
+		case 3:
+			System.out.println("Marcha 3: velocidad entre 61 y 100 km/h");
+		case 4:
+			System.out.println("Marcha 2: velocidad entre 21 y 60 km/h");
+		case 5:
+			System.out.println("Marcha 1: velocidad entre 0 y 20 km/h");
+		case 6:
+			System.out.println("El auto no se encuentra avanzando");
+			break;
+		}
+		
+	}
+	
+
+}

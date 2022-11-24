@@ -1,0 +1,10 @@
+
+public class Factura {
+
+	public String numeroDeFactura;
+	public String descripcionDeFactura;
+	public int cantidadDeArticulos;
+	public Double precioDeArticulo;
+	
+} // termina clase factura
+

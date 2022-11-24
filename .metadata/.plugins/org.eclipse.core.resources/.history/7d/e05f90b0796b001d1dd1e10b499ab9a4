@@ -1,0 +1,48 @@
+
+
+public class FacturaTest {
+
+	public static void main(String[] args) {
+		Factura primeraFactura = new Factura("00010", "Primera venta del dia 23/11/2022", 3, 155.00);
+		Factura segundaFactura = new Factura("00011", "Segunda venta del dia 23/11/2022", 5, 525.00);
+		Factura terceraFactura = new Factura("00012", "Tercera venta del dia 23/11/2022", 1, 70.00);
+		Factura cuartaFactura = new Factura("00013", "Cuarta venta del dia 23/11/2022", 7, 3500.00);
+		Factura quintaFactura = new Factura("00014", "Quinta venta del dia 23/11/2022", 4, 255.00);
+		
+		System.out.println(primeraFactura);
+		System.out.println("***********************");
+		System.out.println(segundaFactura);
+		System.out.println("***********************");
+		System.out.println(terceraFactura);
+		System.out.println("***********************");
+		System.out.println(cuartaFactura);
+		System.out.println("***********************");
+		System.out.println(quintaFactura);
+		System.out.println("***********************");
+		System.out.println("");
+		
+		////////////////////////////////////////////////
+		
+		System.out.println("Total de la primera factura: ");
+		primeraFactura.getTotalFactura(3, 155.00);
+		System.out.println("***********************");
+		
+		System.out.println("Total de la segunda factura: ");
+		primeraFactura.getTotalFactura(5, -525.00);
+		System.out.println("***********************");
+
+		System.out.println("Total de la tercera factura: ");
+		primeraFactura.getTotalFactura(1, -70.00);
+		System.out.println("***********************");
+		
+		System.out.println("Total de la cuarta factura: ");
+		primeraFactura.getTotalFactura(7, -3500.00);
+		System.out.println("***********************");
+		
+		System.out.println("Total de la quinta factura: ");
+		primeraFactura.getTotalFactura(4, -255.00);
+		System.out.println("***********************");
+
+	}
+
+}

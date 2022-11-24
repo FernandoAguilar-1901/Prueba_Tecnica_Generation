@@ -1,0 +1,108 @@
+//Inicio del test FacturaTest
+
+//Se crea la clase FacturaTest
+public class FacturaTest {
+
+	//Declaramos metodo main para establecer lo que buscamos que el programa realice
+	public static void main(String[] args) {
+		
+		//Creamos 5 facturas de prueba respetando el orden que tienen en nuestro constructor
+		Factura primeraFactura = new Factura("00010", "Primera venta del dia 23/11/2022", 3, 155.00);
+		Factura segundaFactura = new Factura("00011", "Segunda venta del dia 23/11/2022", 5, 525.00);
+		Factura terceraFactura = new Factura("00012", "Tercera venta del dia 23/11/2022", 1, 70.00);
+		Factura cuartaFactura = new Factura("00013", "Cuarta venta del dia 23/11/2022", 7, 3500.00);
+		Factura quintaFactura = new Factura("00014", "Quinta venta del dia 23/11/2022", 4, 255.00);
+		
+		//Mandamos a imprimir en consola nuestras facturas de prueba
+		System.out.println(primeraFactura);
+		System.out.println("***********************");
+		System.out.println(segundaFactura);
+		System.out.println("***********************");
+		System.out.println(terceraFactura);
+		System.out.println("***********************");
+		System.out.println(cuartaFactura);
+		System.out.println("***********************");
+		System.out.println(quintaFactura);
+		System.out.println("***********************");
+		System.out.println("");
+		
+		////////////////////////////////////////////////
+		
+		
+		//Realizamos la operacion correspondiente con nuestro metodo getTotalFactura  para obtener el total final de la factura
+		
+		
+		
+		
+		/*
+		 * Primera factura
+		 * 
+		 * Resultados esperados
+		 * 
+		 * Precio del articulo: 0.0
+		 * Total de la factura: 0
+		 * 
+		 * */
+		System.out.println("Total de la primera factura: ");
+		primeraFactura.getTotalFactura(3, -155.00);
+		System.out.println("***********************");
+		
+		
+		/*
+		 * Segunda factura
+		 * 
+		 * Resultados esperados
+		 * 
+		 * Precio del articulo: 525.0
+		 * Total de la factura: 2625
+		 * 
+		 * */
+		System.out.println("Total de la segunda factura: ");
+		primeraFactura.getTotalFactura(5, 525.00);
+		System.out.println("***********************");
+
+		
+		/*
+		 * Tercera factura
+		 * 
+		 * Resultados esperados
+		 * 
+		 * Precio del articulo: 70.0
+		 * Total de la factura: 70
+		 * 
+		 * */
+		System.out.println("Total de la tercera factura: ");
+		primeraFactura.getTotalFactura(1, 70.00);
+		System.out.println("***********************");
+		
+		
+		/*
+		 * Cuarta factura
+		 * 
+		 * Resultados esperados
+		 * 
+		 * Precio del articulo: 0.0
+		 * Total de la factura: 0
+		 * 
+		 * */
+		System.out.println("Total de la cuarta factura: ");
+		primeraFactura.getTotalFactura(7, -3500.00);
+		System.out.println("***********************");
+		
+		
+		/*
+		 * Quinta factura
+		 * 
+		 * Resultados esperados
+		 * 
+		 * Precio del articulo: 255.0
+		 * Total de la factura: 1020
+		 * 
+		 * */
+		System.out.println("Total de la quinta factura: ");
+		primeraFactura.getTotalFactura(4, 255.00);
+		System.out.println("***********************");
+
+	}
+
+}

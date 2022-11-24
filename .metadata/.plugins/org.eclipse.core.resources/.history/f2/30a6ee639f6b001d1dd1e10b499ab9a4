@@ -1,0 +1,19 @@
+
+public class EmpleadoTest {
+
+	public static void main(String[] args) {
+		
+		Empleado Carlos = new Empleado ("Carlos Eduardo", "Vazquez Juarez", 10000.00, 0);
+		Empleado Diego = new Empleado ("Diego Antonio", "Perez Juarez", 10000.00, 0);
+		Empleado Fernando = new Empleado ("Fernando Alberto", "Aguilar Cano", 10000.00, 0);
+		
+		System.out.println(Carlos);
+		System.out.println(Diego);
+		System.out.println(Fernando);
+		
+		Carlos.aumentoDeSalario(10000.00);
+		Diego.aumentoDeSalario(10000.00);
+		System.out.println(Carlos.historialDeEmpleados());
+	}
+
+}

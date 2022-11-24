@@ -1,0 +1,84 @@
+
+public class Factura {
+
+	public String numeroDeFactura;
+	public String descripcionDeFactura;
+	public int cantidadDeArticulos;
+	public Double precioDeArticulo;
+		
+	public Factura(String numeroDeFactura, String descripcionDeFactura, int cantidadDeArticulos,
+			Double precioDeArticulo) {
+		super();
+		this.numeroDeFactura = numeroDeFactura;
+		this.descripcionDeFactura = descripcionDeFactura;
+		this.cantidadDeArticulos = cantidadDeArticulos;
+		this.precioDeArticulo = precioDeArticulo;
+	} //termina constructor
+
+	public String getNumeroDeFactura() {
+		return numeroDeFactura;
+	}
+
+	public void setNumeroDeFactura(String numeroDeFactura) {
+		this.numeroDeFactura = numeroDeFactura;
+	}
+	
+	/////////////////////////////
+
+	public String getDescripcionDeFactura() {
+		return descripcionDeFactura;
+	}
+
+	public void setDescripcionDeFactura(String descripcionDeFactura) {
+		this.descripcionDeFactura = descripcionDeFactura;
+	}
+	
+	///////////////////////////////
+
+	public int getCantidadDeArticulos() {
+		return cantidadDeArticulos;
+	}
+	
+
+	public void setCantidadDeArticulos(int cantidadDeArticulos) {
+		this.cantidadDeArticulos = cantidadDeArticulos;
+	}
+	
+	/////////////////////////////////
+
+	public Double getPrecioDeArticulo() {
+		return precioDeArticulo;
+	}
+
+	public void setPrecioDeArticulo(Double precioDeArticulo) {
+		this.precioDeArticulo = precioDeArticulo;
+	}
+	
+	//////////////////////////////////
+	
+	public void getTotalFactura(int cantidadDeArticulos, Double precioDeArticulo) {
+		int totalFactura = (int) ((cantidadDeArticulos)*(precioDeArticulo));
+		
+		if ((totalFactura < 0)) {
+			totalFactura = 0;
+			precioDeArticulo = 0.0;
+			System.out.println(precioDeArticulo);
+		}
+		
+		System.out.println(totalFactura);
+	}
+
+	
+	//////////////////////////////////
+	
+	@Override
+	public String toString() {
+		return "Factura: [numeroDeFactura=" + numeroDeFactura + ", descripcionDeFactura=" + descripcionDeFactura
+				+ ", cantidadDeArticulos=" + cantidadDeArticulos + ", precioDeArticulo=" + precioDeArticulo + "]";
+	}
+	
+	
+	
+	
+} // termina clase factura
+

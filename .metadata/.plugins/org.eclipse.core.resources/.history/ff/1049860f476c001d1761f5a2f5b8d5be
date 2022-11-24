@@ -1,0 +1,124 @@
+//Se crea la clase "Auto"
+public class Auto {
+	
+	
+	
+	//Se declaran las variables que seran instanciadas para la clase Auto
+	public String modeloAuto;
+	public String colorAuto;
+	public int añoAuto;
+	public String marcaAuto;
+	public String chasisAuto;
+	public String propietarioAuto;
+	public int velocidadMaxima;
+	public int velocidadActual;
+	public int numeroDePuertos;
+	public boolean existeTechoSolar;
+	public int numeroDeMarchas;
+	public boolean existeTransmisionAutomatica;
+	public boolean marchaEnReversa;
+	
+	
+	//Metodo de incremento de velocidad
+	public void aumentoDeVelocidad(int velocidadIncremento) {
+		int vI = 0; // Velocidad inicial
+		int vI2 = 5; // Velocidad en transmision automatica
+		int vMax = 0; // variable de velocidad maxima que puede alcanzar el coche
+		boolean existeTransmisionAutomatica = true;
+		boolean marchaEnReversa = false;
+		
+		//Se crea condicional para definir la velocidad a la que se iniciara el desplazamiento ya sea auto estandar o de transmision automatica
+		if (existeTransmisionAutomatica == true && marchaEnReversa == false) {
+			for (vI2 = 0; vI2 <= vMax; vI2++) {
+			} //termina for 1
+			System.out.println(vMax);
+		} else {
+			for (vI = 0; vI <= vMax; vI++) {
+			} //termina for 2
+			System.out.println(vMax);
+		} //termina else
+
+	} //termina metodo 1
+	
+	
+	
+	
+	
+	
+	//Metodo para disminuir la velocidad
+	public void disminuirVelocidad (int velocidadDecremento) {
+		int vIn = 180; //Velocidad inicial para comenzar a frenar el auto
+		int vIn2 = 200;//Velocidad inicial en este caso para la transmision automatica
+		int vMin = 0; //Velocidad minima que debera alcanzar el coche
+		boolean existeTransmisionAutomatica = true; //Establecemos el valor inicial de la condicion declarada a continuacion
+		boolean marchaEnReversa = false; //Establecemos el valor inicial de la segunda parte de nuestra condicion
+		
+		
+		//Se crea condicional para definir la velocidad a la que se iniciara el desplazamiento ya sea auto estandar o de transmision automatica
+		if (existeTransmisionAutomatica == true && marchaEnReversa == false) {
+			for (vIn = 0; vIn == vMin; vIn--) {
+			} //termina for 3
+			System.out.println(vMin);
+		} else {
+			for (vIn2 = 0; vIn2 == vMin; vIn2--) {
+			} //termina for 4
+			System.out.println(vMin);
+		} //else
+	} //termina metodo 2
+	
+	
+	
+	
+	
+	//Metodo para cambio de marcha
+	public void cambioDeMarcha(int marchaIndicador) {
+		int marcha = 0; //Valor inicial de case para comenzar el avance de la marcha
+		switch (marcha) {
+		case 0:
+			System.out.println("El auto no se encuentra avanzando");
+		case 1:
+			System.out.println("Marcha 1: velocidad entre 0 y 20 km/h");
+		case 2:
+			System.out.println("Marcha 2: velocidad entre 21 y 60 km/h");
+		case 3:
+			System.out.println("Marcha 3: velocidad entre 61 y 100 km/h");
+		case 4:
+			System.out.println("Marcha 4: velocidad entre 101 y 120 km/h");
+		case 5:
+			System.out.println("Marcha 5: velocidad entre 121 y 150 km/h");
+		case 6:
+			System.out.println("Marcha 6: velocidad entre 151 y 180 km/h");
+			break;
+		} //termina switch case 1
+		
+	} //termina metodo 3
+	
+	
+	
+	
+	
+	//Metodo para regresar la marcha
+	public void regresarMarcha(int marchaRegreso) {
+		int marchaR = 0; //Valor inicial de case para comenzar el retroceso de la marcha
+		switch (marchaR) {
+		case 0:
+			System.out.println("Marcha 6: velocidad entre 151 y 180 km/h");
+		case 1:
+			System.out.println("Marcha 5: velocidad entre 121 y 150 km/h");
+		case 2:
+			System.out.println("Marcha 4: velocidad entre 101 y 120 km/h");
+		case 3:
+			System.out.println("Marcha 3: velocidad entre 61 y 100 km/h");
+		case 4:
+			System.out.println("Marcha 2: velocidad entre 21 y 60 km/h");
+		case 5:
+			System.out.println("Marcha 1: velocidad entre 0 y 20 km/h");
+		case 6:
+			System.out.println("El auto no se encuentra avanzando");
+			break;
+		} //termina switch case 2
+		
+	} //termina metodo 4
+	
+
+} //termina clase Auto

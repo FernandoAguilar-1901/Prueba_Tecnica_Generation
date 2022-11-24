@@ -1,0 +1,25 @@
+
+public class EmpleadoTest {
+
+	public static void main(String[] args) {
+		
+		Empleado Randy = new Empleado("Randy", "Orton", 8000.00);
+		Empleado Francesco = new Empleado("Francesco", "Totti", 5400.00);
+		
+		
+		System.out.println("Empleado 1: ");
+		System.out.println(Randy);
+		System.out.println("");
+		System.out.println("Empleado 2: ");
+		System.out.println(Francesco);
+		System.out.println("");
+		
+		System.out.println("Empleado 1: ");
+		Randy.aumentarSalario(8000.00, 1.0);
+		System.out.println("");
+		System.out.println("Empleado 2: ");
+		Francesco.aumentarSalario(5400.00, 1.0);
+				
+
+	}	
+}
